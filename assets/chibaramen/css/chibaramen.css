@@ -1,0 +1,51 @@
+/*
+ * Overwrite common.css
+ */
+.header_lnav .header_lnav_ttl > a {
+  background-image: url("../img/header_lnav_ttl_chibaramen.png");
+  background-size: 200px auto;
+  background-position: center;
+}
+@media all and (min-width: 0px) and (max-width: 896px) {
+  body.chibaramen .header_lnav .header_lnav_ttl > a {
+    background-position: center;
+    background-size: contain;
+    width: 136px;
+  }
+}
+
+body.chibaramen .header_lnav .header_lnav_menu > li > a:hover,
+body.chibaramen .header_lnav .header_lnav_menu > li > a.active { color: #004162; }
+
+/*
+ * Overwrite parts.css
+ */
+body.chibaramen .cnt_ttl:after { background-color: #004162; }
+body.chibaramen .link_icon:before { background-color: #004162; }
+body.chibaramen .cnt_feature_lists > ul > li > .cnt_feature_lists_inner > .cnt_btn > li > a:hover > .link_icon { color: #004162; }
+
+/**
+ * Original ??
+ */
+#content .hentry img { max-width: 100%; height: auto; }
+@media all and (min-width: 897px) {
+  #content .hentry img { max-width: 75%; height: auto; }
+}
+#content .hentry p { margin-bottom: 20px; }
+#content .hentry h3,
+#content .hentry h4 { margin-bottom: 10px; }
+#content .hentry p + h3,
+#content .hentry p + h4 { margin-top: 40px; }
+
+/**
+ * WordPress
+ */
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+@media all and (min-width: 0px) and (max-width: 896px) {
+  .alignnone {
+    width: inherit;
+  }
+}

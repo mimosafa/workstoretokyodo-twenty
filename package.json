@@ -1,0 +1,12 @@
+{
+  "name": "workstoretokyodo-twenty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/env": "^1.3.0"
+  },
+  "scripts": {
+    "wp-env": "wp-env"
+  }
+}

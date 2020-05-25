@@ -1,0 +1,478 @@
+@charset "UTF-8";
+
+/**
+ * ================================================================================
+ * Table of Contents:
+ *
+ * Direct Page Settings
+ *    - Brand Page Settings
+ *    - Space Page Settings
+ *    - Reds Page Settings
+ * ================================================================================
+ */ 
+
+ 
+
+
+
+
+/**
+ * ================================================================================
+ * Brand Page Settings
+ * ================================================================================
+ */
+
+
+/**
+ * Brand Main Visual
+ * -------------------------------
+ */
+
+body.neostall_brand_page .brand_mv {}
+
+    
+    /* -- .brand_mv_lunch_btn -- */
+    body.neostall_brand_page .brand_mv .brand_mv_lunch_btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 100;
+        }
+
+        body.neostall_brand_page .brand_mv .brand_mv_lunch_btn > a {
+            background-image: url("/assets/neostall/img/neostall_brand_mv_lunch_btn.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 170px auto; 
+            display: block;
+            width: 170px;
+            height: 170px;
+            }
+
+
+
+/**
+ * Feature Lists
+ * -------------------------------
+ */
+
+body.neostall_brand_page .cnt_feature_lists > ul > li { height: 500px; }
+
+    body.neostall_brand_page .cnt_feature_lists > ul > li:nth-of-type(1) > .cnt_feature_lists_inner > .cnt_feature_lists_ttl > span { background-image: url("/assets/neostall/img/neostall_brand_feature_lists01_ttl.png"); }
+    body.neostall_brand_page .cnt_feature_lists > ul > li:nth-of-type(2) > .cnt_feature_lists_inner > .cnt_feature_lists_ttl > span { background-image: url("/assets/neostall/img/neostall_brand_feature_lists02_ttl.png"); }
+
+
+
+
+
+/**
+ * ================================================================================
+ * Space Page Settings
+ * ================================================================================
+ */
+
+/**
+ * Space Map
+ * -------------------------------
+ */
+
+body.neostall_space_page .neostall_space_map {}
+
+    body.neostall_space_page .neostall_space_map > ul {
+        position: relative;
+        width: 900px;
+        height: 450px;
+        margin: 0 auto;
+        }
+
+        body.neostall_space_page .neostall_space_map > ul li {
+            width: 80px;
+            height: 50px;
+            position: absolute;
+            }
+
+            body.neostall_space_page .neostall_space_map > ul li > span {
+                display: table;
+                width: 100%;
+                height: 100%;
+                border-left: 1px solid #f39700;
+                border-bottom: 1px solid #f39700;
+                overflow: hidden;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                }
+
+                body.neostall_space_page .neostall_space_map > ul li > span > a {
+                    background-color: #f2f2f2;
+                    display: table-cell;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                    cursor: default;
+                    color: #999;
+                    font-size: 12px;
+                    font-weight: 600;
+                    }
+                body.neostall_space_page .neostall_space_map > ul li > span > a:hover { opacity: 1; }
+                body.neostall_space_page .neostall_space_map > ul li > span > a.active {
+                    background-color: #fff;
+                    position: relative;
+                    cursor: pointer;
+                    color: #f39700;
+                    }
+                body.neostall_space_page .neostall_space_map > ul li > span > a.active.jump {
+                    top: 0;
+                    animation: jump 2s ease-in-out;
+                    -webkit-animation: jump 2s ease-in-out;
+                    -moz-animation: jump 2s ease-in-out;
+                    }
+                    @keyframes jump {
+                        0% { top: 0; }
+                        5% { top: -10px; }
+                        10% { top: 0px; }
+                        100% { top: 0; }
+                        }
+                    @-webkit-keyframes jump {
+                        0% { top: 0; }
+                        5% { top: -10px; }
+                        10% { top: 0px; }
+                        100% { top: 0; }
+                        }
+                    @-moz-keyframes jump {
+                        0% { top: 0; }
+                        5% { top: -10px; }
+                        10% { top: 0px; }
+                        100% { top: 0; }
+                        }
+                body.neostall_space_page .neostall_space_map > ul li > span > a.active:hover {
+                    background-color: #f39700;
+                    top: 0 !important;
+                    color: #fff;
+                    }
+
+
+        /* -- Position -- */
+        /* Tokyo */
+        body.neostall_space_page .neostall_space_map > ul > li.tokyo { width: 100%; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > span { display: none; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_nerima_ku { top: 100px; left: 240px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_itabashi_ku { top: 100px; left: 320px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_kita_ku { top: 100px; left: 400px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_adachi_ku { top: 100px; left: 480px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_katsushika_ku { top: 100px; left: 560px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_edogawa_ku { top: 100px; left: 640px; height: 150px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_nakano_ku { top: 150px; left: 240px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_toshima_ku { top: 150px; left: 320px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_bunkyo_ku { top: 150px; left: 400px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_arakawa_ku { top: 150px; left: 480px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_sumida_ku { top: 150px; left: 560px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_suginami_ku { top: 200px; left: 240px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_shinjuku_ku { top: 200px; left: 320px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_chiyoda_ku { top: 200px; left: 400px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_taito_ku { top: 200px; left: 480px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_koto_ku { top: 200px; left: 560px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_setagaya_ku { top: 250px; left: 240px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_shibuya_ku { top: 250px; left: 320px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_minato_ku { top: 250px; left: 400px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_chuo_ku { top: 250px; left: 480px; width: 81px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_meguro_ku { top: 300px; left: 320px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_shinagawa_ku { top: 300px; left: 400px; width: 81px; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_ota_ku { top: 350px; left: 320px; width: 161px; height: 100px; }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_chuo_ku > span { border-right: 1px solid #f39700; }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_shinagawa_ku > span { border-right: 1px solid #f39700; }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_ota_ku > span { border-right: 1px solid #f39700; }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_chuo_ku > span,
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_chuo_ku > span > a {
+                    -webkit-border-radius: 0 0 5px 0;
+                    -moz-border-radius: 0 0 5px 0;
+                    border-radius: 0 0 5px 0;
+                    }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_ota_ku > span,
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul > li.tokyo_23_ota_ku > span > a {
+                    -webkit-border-radius: 0 0 10px 0;
+                    -moz-border-radius: 0 0 10px 0;
+                    border-radius: 0 0 10px 0;
+                    }
+
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23_over { top: 100px; left:0; width: 240px; height: 200px; }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23_over > span { border-left: none; }
+
+        /* Saitama */
+        body.neostall_space_page .neostall_space_map > ul > li.saitama { top: 0; left: 0; width: 720px; height: 100px; }
+            body.neostall_space_page .neostall_space_map > ul > li.saitama > span { border-left: none; border-top: 1px solid #f39700; }
+
+        /* Chiba */
+        body.neostall_space_page .neostall_space_map > ul > li.chiba { top: 0; left: 720px; width: 180px; height: 250px; }
+            body.neostall_space_page .neostall_space_map > ul > li.chiba > span { border-top: 1px solid #f39700; }
+
+        /* Kanagawa */
+        body.neostall_space_page .neostall_space_map > ul > li.kanagawa { top: 300px; left: 0; width: 320px; height: 150px; }
+            body.neostall_space_page .neostall_space_map > ul > li.kanagawa > span { border-left: none; }
+
+
+
+/**
+ * ================================================================================
+ * Reds Page Settings
+ * ================================================================================
+ */
+
+
+/**
+ * Reds Map
+ * -------------------------------
+ */
+
+body.neostall_reds_page .neostall_reds_map {}
+
+    body.neostall_reds_page .neostall_reds_map > ul {
+        background-image: url("/assets/neostall/img/neostall_reds_map.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        position: relative;
+        width: 900px;
+        height: 490px;
+        margin: 0 auto;
+        }
+
+        body.neostall_reds_page .neostall_reds_map > ul li {
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            }
+
+            body.neostall_reds_page .neostall_reds_map > ul li > span {
+                display: table;
+                width: 100%;
+                height: 100%;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                }
+
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a {
+                    background-color: rgba(128, 128, 128, 0.9);
+                    display: table-cell;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                    cursor: default;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 600;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                    position: relative;
+                    }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a:hover { opacity: 1; }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a.active {
+                    background-color: rgba(230, 4, 16, 0.9);
+                    cursor: pointer;
+                    color: #fff;
+                    }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a.active:hover { opacity: 0.6; }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a:after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    margin-left: -6px;
+                    border-style: solid;
+                    border-width: 8px 6px 0 6px;
+                    border-color: #808080 transparent transparent;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -8px;
+                    }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a.active:after { border-color: #e60412 transparent transparent; }
+
+
+        /* -- Position -- */
+        /* Northpark */
+        body.neostall_reds_page .neostall_reds_map > ul > li.northpark { top: 80px; left: 260px; }
+        /* Northgate */
+        body.neostall_reds_page .neostall_reds_map > ul > li.northgate { top: 130px; left: 280px; }
+        /* Southmain */
+        body.neostall_reds_page .neostall_reds_map > ul > li.southmain { top: 265px; left: 190px; }
+        /* Southback */
+        body.neostall_reds_page .neostall_reds_map > ul > li.southback { top: 308px; left: 280px; }
+        /* Southpark */
+        body.neostall_reds_page .neostall_reds_map > ul > li.southpark { top: 351px; left: 220px; }
+        /* Sidewalk */
+        body.neostall_reds_page .neostall_reds_map > ul > li.sidewalk { top: 380px; left: 340px; }
+        body.neostall_reds_page .neostall_reds_map > ul > li:nth-last-of-type(1) { top: 250px; left: 700px; }
+
+
+
+
+
+
+
+@media all and (min-width: 0px) and (max-width: 896px) {
+    
+
+/**
+ * ================================================================================
+ * Brand Page Settings
+ * ================================================================================
+ */
+
+
+/**
+ * Brand Main Visual
+ * -------------------------------
+ */
+
+body.neostall_brand_page .brand_mv {}
+
+    
+    /* -- .brand_mv_lunch_btn -- */
+    body.neostall_brand_page .brand_mv .brand_mv_lunch_btn {
+        top: 4px;
+        right: -10px;
+        }
+
+        body.neostall_brand_page .brand_mv .brand_mv_lunch_btn > a {
+            background-size: 100px auto; 
+            width: 100px;
+            height: 100px;
+            }
+
+
+
+/**
+ * Feature Lists
+ * -------------------------------
+ */
+
+body.neostall_brand_page .cnt_feature_lists > ul > li { height: auto; }
+
+
+    
+    
+    
+    
+/**
+ * ================================================================================
+ * Space Page Settings
+ * ================================================================================
+ */
+
+/**
+ * Space Map
+ * -------------------------------
+ */
+
+body.neostall_space_page .neostall_space_map {}
+
+    body.neostall_space_page .neostall_space_map > ul {
+        width: 100%;
+        height: 180px;
+        }
+
+        body.neostall_space_page .neostall_space_map > ul li {
+            width: 33.33%;
+            height: 60px;
+            }
+
+            body.neostall_space_page .neostall_space_map > ul li > span > a { font-size: 11px; }
+            body.neostall_space_page .neostall_space_map > ul li > span > a:hover { opacity: 1; }
+            body.neostall_space_page .neostall_space_map > ul li > span > a.active:hover {
+                background-color: #fff;
+                color: #f39700;
+                }
+
+        /* -- Position -- */
+        /* Tokyo */
+        body.neostall_space_page .neostall_space_map > ul > li.tokyo {}
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > ul { display: none; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > span { display: table; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 { display: block; top: 60px; left: 33.33%; }
+            body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23_over { top: 60px; left: 0; width: 33.33%; height: 60px; }
+                body.neostall_space_page .neostall_space_map > ul > li.tokyo > ul > li.tokyo_23 > span { border-right: 1px solid #f39700; }
+
+        /* Saitama */
+        body.neostall_space_page .neostall_space_map > ul > li.saitama { top: 0; left: 0; width: 66.66%; height: 60px; }
+            body.neostall_space_page .neostall_space_map > ul > li.saitama > span { border-right: 1px solid #f39700; }
+
+        /* Chiba */
+        body.neostall_space_page .neostall_space_map > ul > li.chiba { top: 0; left: 66.66%; width: 33.33%; height: 120px; }
+            body.neostall_space_page .neostall_space_map > ul > li.chiba > span { border-left: none; }
+
+        /* Kanagawa */
+        body.neostall_space_page .neostall_space_map > ul > li.kanagawa { top: 120px; left: 0; width: 66.66%; height: 60px; }
+        body.neostall_space_page .neostall_space_map > ul > li.kanagawa > span { border-right: 1px solid #f39700; }
+            body.neostall_space_page .neostall_space_map > ul > li.kanagawa > span,
+            body.neostall_space_page .neostall_space_map > ul > li.kanagawa > span > a {
+                -webkit-border-radius: 0 0 10px 0;
+                -moz-border-radius: 0 0 10px 0;
+                border-radius: 0 0 10px 0;
+                }
+    
+    
+    
+    
+    
+    
+/**
+ * ================================================================================
+ * Reds Page Settings
+ * ================================================================================
+ */
+
+
+/**
+ * Reds Map
+ * -------------------------------
+ */
+
+body.neostall_reds_page .neostall_reds_map {}
+
+    body.neostall_reds_page .neostall_reds_map > ul {
+        background-image: url("/assets/neostall/img/neostall_reds_map_sp.jpg");
+        background-size: 100% auto;
+        width: 100%;
+        height: 0;
+        padding-top: 152%;
+        }
+
+        body.neostall_reds_page .neostall_reds_map > ul li {
+            width: 28%;
+            height: 5%;
+            position: absolute;
+            }
+
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a {
+                    font-size: 11px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a.active:hover { opacity: 1; }
+                body.neostall_reds_page .neostall_reds_map > ul li > span > a:after {
+                    margin-left: -5px;
+                    border-width: 6px 5px 0 5px;
+                    bottom: -6px;
+                    }
+
+
+        /* -- Position -- */
+        /* Northpark */
+        body.neostall_reds_page .neostall_reds_map > ul > li.northpark { top: 8%; left: 42%; }
+        /* Northgate */
+        body.neostall_reds_page .neostall_reds_map > ul > li.northgate { top: 15%; left: 45%; }
+        /* Southmain */
+        body.neostall_reds_page .neostall_reds_map > ul > li.southmain { top: 29%; left: 26%; }
+        /* Southback */
+        body.neostall_reds_page .neostall_reds_map > ul > li.southback { top: 34.5%; left: 46%; }
+        /* Southpark */
+        body.neostall_reds_page .neostall_reds_map > ul > li.southpark { top: 41%; left: 35%; }
+        /* Sidewalk */
+        body.neostall_reds_page .neostall_reds_map > ul > li.sidewalk { top: 45%; left: 65%; }
+        body.neostall_reds_page .neostall_reds_map > ul > li:nth-last-of-type(1) { top: 75%; left: 50%; }
+    
+}

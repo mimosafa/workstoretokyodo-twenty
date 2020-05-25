@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+/**
+ * ================================================================================
+ * Table of Contents:
+ *
+ * Top Page Settings
+ *    - Common Settings
+ *    - Opening Settings
+ *    - Top Main Visual Settings
+ * ================================================================================
+ */
+
+
+
+
+
+
+/**
+ * ================================================================================
+ * Common Settings
+ * ================================================================================
+ */
+
+html,
+body.top_page { overflow: hidden; }
+html.active,
+body.top_page.active { overflow: visible; }
+
+body.top_page #loader { z-index: 99999; }
+
+body.top_page #contents { padding-bottom: 40px; }
+
+
+
+
+
+
+/**
+ * ================================================================================
+ * Opning Settings
+ * ================================================================================
+ */
+
+body.top_page #op {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 90000;
+    }
+
+    body.top_page #op > div {
+        background-image: url("../img/top_op.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 280px auto;
+        display: none;
+        width: 100%;
+        height: 100%;
+        }
+
+
+
+/**
+ * ================================================================================
+ * Top Main Visual Settings
+ * ================================================================================
+ */
+
+
+body.top_page #top_mv {
+    width: 100%;
+    min-height: 500px;
+    padding-bottom: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+    body.top_page #top_mv .top_mv_brand {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        position: relative;
+        }
+
+        body.top_page #top_mv .top_mv_brand > li {
+            width: 25%;
+            height: 100%;
+            padding-left: 1px;
+            vertical-align: top;
+            margin-top: 40px;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct { left: 0; padding-left: 0; }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall { left: 25%; }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte { left: 50%; }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu { left: 75%; }
+
+            body.top_page #top_mv .top_mv_brand > li > a {
+                display: table;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                }
+
+            body.top_page #top_mv .top_mv_brand > li > a:hover { opacity: 1; }
+
+                body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner {
+                    display: table-cell;
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                    text-align: center;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 3;
+                    }
+
+                body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_overlay {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    background-image: url("../../../assets/common/img/bg_dot.png");
+                    background-repeat: repeat;
+                    background-size: 2px auto;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    -webkit-transition: 0.2s ease-out;
+                    -moz-transition: 0.2s ease-out;
+                    transition: 0.2s ease-out;
+                    }
+                body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_direct > a:hover > .top_mv_brand_overlay { background-color: rgba(0, 104, 183, 0.8); }
+                body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_neostall > a:hover > .top_mv_brand_overlay { background-color: rgba(243, 151, 0, 0.8); }
+                body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a:hover > .top_mv_brand_overlay { background-color: rgba(0, 167, 59, 0.8); }
+                body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a:hover > .top_mv_brand_overlay { background-color: rgba(193, 36, 39, 0.8); }
+
+                body.top_page #top_mv .top_mv_brand > li > a > .top_mv_img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    overflow: hidden;
+                    }
+
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_img .top_mv_img_default {
+                        background-repeat: no-repeat;
+                        background-position: 50% 50% !important;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1000;
+                        }
+
+                        body.top_page #top_mv .top_mv_brand > li > a > .top_mv_img .top_mv_img_default img { display: none; }
+
+
+                    /* -- .top_mv_brand_ttl -- */
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_ttl {
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-size: auto 120px;
+                        width: 100%;
+                        height: 120px;
+                        margin-bottom: 40px;
+                        text-indent: -99999px;
+                        }
+                    body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct > a > .top_mv_brand_inner > .top_mv_brand_ttl { background-image: url("../img/top_mv_brand_direct_ttl.png"); }
+                    body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall > a > .top_mv_brand_inner > .top_mv_brand_ttl { background-image: url("../img/top_mv_brand_neostall_ttl.png"); }
+                    body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a > .top_mv_brand_inner > .top_mv_brand_ttl { background-image: url("../img/top_mv_brand_neoponte_ttl.png"); }
+                    body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a > .top_mv_brand_inner > .top_mv_brand_ttl { background-image: url("../img/top_mv_brand_sharyobu_ttl.png"); }
+
+
+                    /* -- .top_mv_brand_feature_lists -- */
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists {
+                        display: none;
+                        width: 100%;
+                        margin-bottom: 35px;
+                        padding: 0 30px;
+                        text-align: center;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        }
+
+                        body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul {
+                            display: inline-block;
+                            list-style: none;
+                            }
+
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li {
+                                display: table;
+                                height: 40px;
+                                margin-bottom: 10px;
+                                padding-left: 55px;
+                                position: relative;
+                                color: #fff;
+                                font-weight: 600;
+                                text-align: left;
+                                }
+
+                                body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li > span {
+                                    display: table-cell;
+                                    width: 100%;
+                                    height: 100%;
+                                    vertical-align: middle;
+                                    }
+
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:after {
+                                content: "";
+                                background-color: rgba(255, 255, 255, 0.9);
+                                background-repeat: no-repeat;
+                                background-size: 40px auto;
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                                margin-top: -20px;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                -webkit-border-radius: 40px;
+                                -moz-border-radius: 40px;
+                                border-radius: 40px;
+                                }
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:nth-of-type(1):after { background-position: 0 0; }
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:nth-of-type(2):after { background-position: 0 -40px; }
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:nth-of-type(3):after { background-position: 0 -80px; }
+
+                            body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:after { background-image: url("../img/top_mv_brand_direct_feature_lists_num.png"); }
+                            body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:after { background-image: url("../img/top_mv_brand_neostall_feature_lists_num.png"); }
+                            body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:after { background-image: url("../img/top_mv_brand_neoponte_feature_lists_num.png"); }
+                            body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:after { background-image: url("../img/top_mv_brand_sharyobu_feature_lists_num.png"); }
+
+
+                    /* -- .cnt_btn -- */
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .cnt_btn { margin-left: 0; }
+
+                        body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .cnt_btn > li {
+                            background-color: rgba(0, 0, 0, 0.2);
+                            display: inline-block;
+                            padding: 12px 35px;
+                            border: 1px solid #fff;
+                            color: #fff;
+                            font-weight: 600;
+                            -webkit-box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            -webkit-transition: 0.2s ease-out;
+                            -moz-transition: 0.2s ease-out;
+                            transition: 0.2s ease-out;
+                            }
+
+                        body.top_page.active #top_mv .top_mv_brand > li > a:hover > .top_mv_brand_inner > .cnt_btn > li { background-color: rgba(255, 255, 255, 0.9); }
+                        body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_direct > a:hover > .top_mv_brand_inner > .cnt_btn > li { color: #0068b7; }
+                        body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_neostall > a:hover > .top_mv_brand_inner > .cnt_btn > li { color: #f39700; }
+                        body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a:hover > .top_mv_brand_inner > .cnt_btn > li { color: #00a73b; }
+                        body.top_page.active #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a:hover > .top_mv_brand_inner > .cnt_btn > li { color: #c12427; }
+
+
+                    /* -- .top_mv_brand_btn_sp -- */
+                    body.top_page #top_mv .top_mv_brand > li .top_mv_brand_btn { display: none; }
+
+
+
+
+
+
+
+
+@media all and (min-width: 0px) and (max-width: 896px) {
+
+
+/**
+ * ================================================================================
+ * Common Settings
+ * ================================================================================
+ */
+
+
+body.top_page #contents { padding-bottom: 20px; }
+
+
+
+
+
+
+/**
+ * ================================================================================
+ * Opning Settings
+ * ================================================================================
+ */
+
+
+body.top_page #op > div { background-size: 160px auto; }
+
+
+
+
+
+
+/**
+ * ================================================================================
+ * Top Main Visual Settings
+ * ================================================================================
+ */
+
+
+body.top_page #top_mv {
+    min-height: 400px;
+    padding-bottom: 15px;
+    }
+
+    body.top_page #top_mv .top_mv_brand {
+        margin-top: -1px;
+        position: relative;
+        }
+
+        body.top_page #top_mv .top_mv_brand > li {
+            width: 50%;
+            height: 50%;
+            padding-top: 1px;
+            position: absolute;
+            }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct { top: 0; left: 0; margin-top: 20px; }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall { top: 0; left: auto; right: 0; margin-top: 20px; }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte { top: auto; bottom: 0; left: 0; margin-bottom: -20px; padding-left: 0; }
+        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu { top: auto; bottom: 0; left: auto; right: 0; margin-bottom: -20px; }
+
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct > a:hover > .top_mv_brand_overlay { background-color: rgba(0, 0, 0, 0.5); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall > a:hover > .top_mv_brand_overlay { background-color: rgba(0, 0, 0, 0.5); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a:hover > .top_mv_brand_overlay { background-color: rgba(0, 0, 0, 0.5); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a:hover > .top_mv_brand_overlay { background-color: rgba(0, 0, 0, 0.5); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct > a.active > .top_mv_brand_overlay { background-color: rgba(0, 104, 183, 0.8); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall > a.active > .top_mv_brand_overlay { background-color: rgba(243, 151, 0, 0.8); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a.active > .top_mv_brand_overlay { background-color: rgba(0, 167, 59, 0.8); }
+                body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a.active > .top_mv_brand_overlay { background-color: rgba(193, 36, 39, 0.8); }
+
+                body.top_page #top_mv .top_mv_brand > li > a > .top_mv_img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    overflow: hidden;
+                    }
+
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_img .bg_img > li { width: 100% !important; }
+
+
+                    /* -- .top_mv_brand_ttl -- */
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_ttl {
+                        background-size: auto 65px;
+                        height: 65px;
+                        margin-top: -20px;
+                        margin-bottom: 25px;
+                        }
+
+
+                    /* -- .top_mv_brand_feature_lists -- */
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists {
+                        display: none;
+                        margin-bottom: 25px;
+                        padding: 0 15px;
+                        }
+
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li {
+                                min-height: 35px;
+                                margin-bottom: 5px;
+                                padding-left: 50px;
+                                }
+
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:after {
+                                background-size: 35px auto;
+                                width: 35px;
+                                height: 35px;
+                                margin-top: -17.5px;
+                                -webkit-border-radius: 35px;
+                                -moz-border-radius: 35px;
+                                border-radius: 35px;
+                                }
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:nth-of-type(1):after { background-position: 0 0; }
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:nth-of-type(2):after { background-position: 0 -35px; }
+                            body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .top_mv_brand_feature_lists > ul > li:nth-of-type(3):after { background-position: 0 -70px; }
+
+
+                    /* -- .cnt_btn -- */
+                    body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .cnt_btn { display: none; }
+
+                        body.top_page #top_mv .top_mv_brand > li > a > .top_mv_brand_inner > .cnt_btn > li {
+                            background-color: rgba(255, 255, 255, 0.9);
+                            padding: 10px 20px;
+                            }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct > a > .top_mv_brand_inner > .cnt_btn > li { color: #0068b7; }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall > a > .top_mv_brand_inner > .cnt_btn > li { color: #f39700; }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte > a > .top_mv_brand_inner > .cnt_btn > li { color: #00a73b; }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu > a > .top_mv_brand_inner > .cnt_btn > li { color: #c12427; }
+
+
+                    /* -- .top_mv_brand_btn_sp -- */
+                    body.top_page #top_mv .top_mv_brand > li .top_mv_brand_btn_sp {
+                        display: block;
+                        position: relative;
+                        }
+
+                        body.top_page #top_mv .top_mv_brand > li .top_mv_brand_btn_sp > span {
+                            background-color: rgba(255, 255, 255, 0.9);
+                            background-repeat: no-repeat;
+                            background-position: 50% 50%;
+                            background-size: 25px auto;
+                            display: block;
+                            width: 25px;
+                            height: 25px;
+                            margin-right: -12.5px;
+                            position: absolute;
+                            top: 0;
+                            right: 50%;
+                            -webkit-border-radius: 25px;
+                            -moz-border-radius: 25px;
+                            border-radius: 25px;
+                            }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_direct .top_mv_brand_btn_sp > span { background-image: url("../img/top_mv_brand_direct_btn_sp.png"); }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neostall .top_mv_brand_btn_sp > span { background-image: url("../img/top_mv_brand_neostall_btn_sp.png"); }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_neoponte .top_mv_brand_btn_sp > span { background-image: url("../img/top_mv_brand_neoponte_btn_sp.png"); }
+                        body.top_page #top_mv .top_mv_brand > li.top_mv_brand_sharyobu .top_mv_brand_btn_sp > span { background-image: url("../img/top_mv_brand_sharyobu_btn_sp.png"); }
+
+                    body.top_page #top_mv .top_mv_brand > li .top_mv_brand_btn_close_sp {
+                        display: none;
+                        position: absolute;
+                        width: 45px;
+                        height: 45px;
+                        top: 0;
+                        right: 0;
+                        z-index: 6;
+                        cursor: pointer;
+                        }
+
+                        body.top_page #top_mv .top_mv_brand > li .top_mv_brand_btn_close_sp > span {
+                            top: 10px;
+                            right: 10px;
+                            margin-right: 0;
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                            }
+
+
+}
